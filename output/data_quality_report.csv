@@ -1,0 +1,18 @@
+Step,Metric,Value,Description,Status
+1,Raw Records Loaded,541909,Original transactions from Online Retail.xlsx,VERIFIED
+2,Missing CustomerID Rows,135080,Guest / unregistered transactions removed,REMOVED
+3,Missing InvoiceNo Rows,0,Transactions without invoice number,ZERO_FOUND
+4,Missing InvoiceDate Rows,0,Transactions without timestamp,ZERO_FOUND
+5,Missing Description Rows,1454,Raw records lacking item description,AUDITED
+6,Raw Duplicate Rows,5268,Identical line item records in raw dataset,AUDITED
+7,Records with CustomerID,406829,Transactions retained after customer presence filter,RETAINED
+8,Cancelled Invoices (C),8905,Returns/cancellations removed from sales analysis,EXCLUDED
+9,Non-Positive Quantity Rows,0,Adjustments / negative items removed,EXCLUDED
+10,Non-Positive UnitPrice Rows,40,Free samples or zero-price entries removed,EXCLUDED
+11,Cleaned Transactions,397884,Preserved valid transaction line records,CONFIRMED
+12,Unique Customers,4338,Distinct paying customer identifiers,RECONCILED
+13,Unique Invoices (Orders),18532,Distinct invoice numbers (COUNT DISTINCT),RECONCILED
+14,Total Valid Revenue (£),8911407.9,Total sales volume (Quantity * UnitPrice),RECONCILED
+15,Date Range Start,2010-12-01 08:26:00,Earliest transaction in cleaned dataset,AUDITED
+16,Date Range End,2011-12-09 12:50:00,Latest transaction in cleaned dataset,AUDITED
+17,RFM Reference Date,2011-12-10 12:50:00,Latest date + 1 day used as recency benchmark,ESTABLISHED

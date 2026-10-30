@@ -1,0 +1,40 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Project backups
+backup/
+*.bak
+
+# Temporary / Scratch files
+scratch/
+tmp/
+*.tmp
+.system_generated/
+
+# Large Datasets and Generated Binaries (Regenerated via run_project.bat)
+data/*.xlsx
+data/*.csv
+output/cleaned_transactions.csv
+output/retail_analysis.db
+output/retail_analysis.sqbpro
